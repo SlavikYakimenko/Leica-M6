@@ -1,0 +1,126 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+
+}
+
+h2 {
+  font-size: 6rem;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@import 'home';
+@import "features";
+@import 'coming-soon';
+@import 'footer';
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    #logo {
+      flex: 1;
+    }
+
+    ul {
+      li {
+        margin-left: 5rem;
+      }
+    }
+  }
+  .showcase {
+    grid-template-columns: 10% 1fr 10%;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    img,
+    h2,
+    .info {
+      grid-column: 2/3;
+      text-align: center;
+    }
+  }
+  .features {
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin-top: 5rem;
+    }
+
+    .cards {
+      align-items: center;
+      flex-direction: column;
+
+      .card {
+        margin: 5rem 0rem;
+      }
+    }
+  }
+  .coming-soon {
+    overflow: hidden;
+
+    img {
+      width: 50%;
+    }
+
+    h2 {
+      top: 30%;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .circle {
+      width: 50%;
+    }
+  }
+  footer {
+    h1 {
+      flex: 1;
+    }
+  }
+}
+
