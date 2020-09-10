@@ -2,4 +2,5 @@
 
 Leica web page showcase
 
-[alt tag](LeicaM6.png)
+![alt text](LeicaM6 "Preview image")
+
