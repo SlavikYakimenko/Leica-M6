@@ -2,4 +2,4 @@
 
 Leica web page showcase
 
-[alt tag](Leica-M6.png)
+[alt tag](LeicaM6.png)
